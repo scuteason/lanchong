@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>小懒虫的主页</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+            color: #333;
+        }
+
+        #wrapper {
+            position: absolute;
+            left: 0;
+            width: 400px;
+            text-align: center;
+            top: 30%;
+            left: 50%;
+            margin-left: -160px;
+            margin-top: -160px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 12px 1;
+            left: 4px;
+        }
+
+        h2 {
+            color: #999;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: .12em;
+            margin-bottom: 30px;
+            left: 3px;
+        }
+
+        h1,
+        h2 {
+            position: relative;
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+		hp {
+		  
+            font-size: 34px;
+            line-height: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        a {
+            color: #999;
+            text-decoration: none;
+            transition: color .2s ease;
+        }
+
+        a:hover {
+            color: #f33;
+        }
+
+        .beian {
+            position: absolute;
+            bottom: 15px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>大懒虫和小懒虫的网站首页哦</h1>
+        <h2></h2>
+        <p>
+            <a href="https://scuteason.github.io/lanchong/time" target="_blank">那个好看的树</a>
+        </p>
+		<p>
+            <a href="https://scuteason.github.io/lanchong/love/togather" target="_blank">我们的在一起计时</a>
+        </p>
+        <p>
+            <a href="https://scuteason.github.io/lanchong/flipped" target="_blank">小懒虫点滴展览馆</a>
+        </p>
+		<p>
+            <a href="https://scuteason.github.io/lanchong/2048/start" target="_blank">那个不好玩的2048</a>
+        </p>
+        <p>
+            <a href="https://scuteason.github.io/lanchong/gobang/start" target="_blank">那个一直输的五子棋</a>
+        </p>
+        <p>
+        <a href="https://scuteason.github.io/lanchong/bird/start" target="_blank">那个很无聊的小鸟游戏</a>
+        </p>
+    </div>
+    <canvas width="1920" height="917"></canvas>
+    <!-- <div class="beian">
+        <a href="http://www.miitbeian.gov.cn/" target="_blank">渝ICP备18003486号-1</a>
+        <span>|</span>
+        <a href="https://www.beian.gov.cn/portal/index" target="_blank">渝公网安备50019002501367号</a>
+    </div> -->
+    <script>
+        document.addEventListener('touchmove', function (e) {
+            e.preventDefault()
+        })
+        var c = document.getElementsByTagName('canvas')[0],
+            x = c.getContext('2d'),
+            pr = window.devicePixelRatio || 1,
+            w = window.innerWidth,
+            h = window.innerHeight,
+            f = 90,
+            q,
+            m = Math,
+            r = 0,
+            u = m.PI * 2,
+            v = m.cos,
+            z = m.random
+        c.width = w * pr
+        c.height = h * pr
+        x.scale(pr, pr)
+        x.globalAlpha = 0.6
+
+        function i() {
+            x.clearRect(0, 0, w, h)
+            q = [{
+                x: 0,
+                y: h * .7 + f
+            }, {
+                x: 0,
+                y: h * .7 - f
+            }]
+            while (q[1].x < w + f) d(q[0], q[1])
+        }
+
+        function d(i, j) {
+            x.beginPath()
+            x.moveTo(i.x, i.y)
+            x.lineTo(j.x, j.y)
+            var k = j.x + (z() * 2 - 0.25) * f,
+                n = y(j.y)
+            x.lineTo(k, n)
+            x.closePath()
+            r -= u / -50
+            x.fillStyle = '#' + (v(r) * 127 + 128 << 16 | v(r + u / 3) * 127 + 128 << 8 | v(r + u / 3 * 2) * 127 + 128).toString(
+                16)
+            x.fill()
+            q[0] = q[1]
+            q[1] = {
+                x: k,
+                y: n
+            }
+        }
+
+        function y(p) {
+            var t = p + (z() * 2 - 1.1) * f
+            return (t > h || t < 0) ? y(p) : t
+        }
+        document.onclick = i
+        document.ontouchstart = i
+        i()
+    </script>
+
+
+</body>
+
+</html>
