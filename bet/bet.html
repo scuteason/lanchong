@@ -1,0 +1,147 @@
+<!DOCTYPE html><html>
+<head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>我们的打赌嘻嘻</title><link rel="shortcut icon" href=./favicon.ico type=image/x-icon>
+<style>* {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #F7FAFC;
+        overflow: hidden;
+        font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+      }
+	  html,
+        body {
+            overflow: hidden;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+            color: #E0FFFF;
+        }
+
+        #wrapper {
+            position: absolute;
+	        z-index:9999;
+            left: 0;
+            width: 720px;
+            text-align: center;
+            top: 30%;
+            left: 38%;
+            margin-left: -190px;
+            margin-top: -140px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        h1 {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial;
+            font-weight: 350;
+            font-size: 25px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 12px 1;
+            left: 4px;
+			color: #F0F8FF
+        }
+
+        h2 {
+            color: #999;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: .12em;
+            margin-bottom: 30px;
+            left: 3px;
+        }
+
+        h1,
+        h2 {
+            position: relative;
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+		hp {
+		  
+            font-size: 34px;
+            line-height: 2em;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        a {
+            color:#F6F66F;
+            text-decoration: none;
+            transition: color .2s ease;
+        }
+
+        a:hover {
+            color: #000;
+        }</style>
+		<div id="wrapper">
+        <h1>小懒虫说呀，等在一起久了就腻了，后面大懒虫就不会一直好好陪着小懒虫了。我才不会这样呢，所以我肯定赢！！</h1>
+		<h1>我们打赌赢了的人就可以指定一顿自己想吃的饭，然后输的人逛超市呀，认真做这个饭来吃，小懒虫可不能赖皮哦。</h1>
+        <h1>我已经开始在想我到时候要点吃什么好呢😝</h1>
+
+		<h2></h2>
+        <!-- <p>
+            <a href="https://scuteason.github.io/lanchong/time" target="_blank">那个好看的树</a>
+        </p>
+		<p>
+            <a href="https://scuteason.github.io/lanchong/love/togather" target="_blank">我们的在一起计时</a>
+        </p>
+        <p>
+            <a href="https://scuteason.github.io/lanchong/flipped" target="_blank">小懒虫点滴展览馆</a>
+        </p>
+		<p>
+            <a href="https://scuteason.github.io/lanchong/flipped" target="_blank">这里是我们的赌约哟</a>
+        </p>
+		<p>
+            <a href="https://scuteason.github.io/lanchong/2048/start" target="_blank">那个不好玩的2048</a>
+        </p>
+        <p>
+            <a href="https://scuteason.github.io/lanchong/gobang/start" target="_blank">那个一直输的五子棋</a>
+        </p>
+        <p>
+        <a href="https://scuteason.github.io/lanchong/bird/start" target="_blank">那个很无聊的小鸟游戏</a>
+        </p> -->
+    </div>
+	<div class="snow-container">
+  <div class="snow foreground"></div>
+  <div class="snow foreground layered"></div>
+  <div class="snow middleground"></div>
+  <div class="snow middleground layered"></div>
+  <div class="snow background"></div>
+  <div class="snow background layered"></div>
+</div>
+    <canvas width="1366" height="768"></canvas>
+		<link href=./static/css/app.8ae8e04187125a05cb9aac9964e3cd11.css rel=stylesheet>
+		<link rel="stylesheet" type="text/css" href="./static/css/default.css">
+		</head>
+		<body>
+	  <div id=app></div>
+	  <script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script>
+	  <script type=text/javascript src=./static/js/vendor.5f5f463b403d221b7b37.js></script>
+	  <script type=text/javascript src=./static/js/app.675eb50cfed147e92834.js></script>
+	 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	 <script>
+(function($){$.fn.snow=function(options){var $flake=$('<div id="flake" />').css({'position':'absolute','top':'-50px'}).html('&#10052;'),documentHeight=$(document).height(),documentWidth=$(document).width(),defaults={minSize:10,maxSize:20,newOn:500,flakeColor:"#FFFFFF"},options=$.extend({},defaults,options);var interval=setInterval(function(){var startPositionLeft=Math.random()*documentWidth-100,startOpacity=0.5+Math.random(),sizeFlake=options.minSize+Math.random()*options.maxSize,endPositionTop=documentHeight-40,endPositionLeft=startPositionLeft-100+Math.random()*200,durationFall=documentHeight*10+Math.random()*5000;$flake.clone().appendTo('body').css({left:startPositionLeft,opacity:startOpacity,'font-size':sizeFlake,color:options.flakeColor}).animate({top:endPositionTop,left:endPositionLeft,opacity:0.2},durationFall,'linear',function(){$(this).remove()});},options.newOn);};})(jQuery);
+$.fn.snow({ minSize: 5, maxSize: 50, newOn: 1000, flakeColor: '#FFF' });
+</script>
+	 </body></html>
