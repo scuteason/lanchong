@@ -30,7 +30,7 @@ function r(e,t){if(!i.canUseDOM||t&&!("addEventListener"in document))return!1;va
 {fileName:"8.jpg",title:"情侣装呀",desc:"跟小宝贝的情侣装，真的很喜欢这件衣服呀。以后我们继续去以纯买冬天的情侣装，还有情侣裤，还有外套，鞋子😁"},
 {fileName:"9.jpg",title:"",desc:"宝贝是我的小星星"},
 {fileName:"10.jpg",title:"学校里的合照哟",desc:"这是与懒虫的第一张真正意义的合照呢（我脸怎么这么大）"},
-{fileName:"11.jpg",title:"掐猫猫",desc::"宝贝：猫哥舒服吗？ \n 猫哥：嗯哼，再往右一点点😻"},
+{fileName:"11.jpg",title:"掐猫猫",desc:"宝贝：猫哥舒服吗？ 猫哥：嗯哼，再往右一点点😻"},
 {fileName:"12.jpg",title:"",desc:"你看这小眼神嘻嘻😉"},
 {fileName:"13.jpg",title:"",desc:"自己人自己人，别开枪🤚"},
 {fileName:"14.jpg",title:"芜湖~",desc:"懒虫会努力赚钱呀"},
