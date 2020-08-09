@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>小懒虫的主页</title>
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
-
+ <link rel="stylesheet" href="./1output/style.css"> <!-- 素材1-->
 <meta name="viewport" id="view" content="width=device-width, initial-scale=1.0, user-scalable=yes" /> 
 
     <style>
@@ -17,14 +17,16 @@
 
         body {
             font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
-            color: #333;
+            color: #FFF;
+			<!-- color: #333; 原始-->
+			
         }
 
         #wrapper {
             position: absolute;
 	z-index:9999;
             left: 0;
-            width: 400px;
+            width: 450px;
             text-align: center;
             top: 20%;
             left: 43%;
@@ -37,12 +39,16 @@
 
         h1 {
             font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
-            font-weight: 700;
+            <!-- font-weight: 700; 原始-->
+			<!-- font-weight: 700; 原始-->
+			font-weight: 500;
+			font-weight: 500;
             font-size: 50px;
             letter-spacing: 2px;
             text-transform: uppercase;
             margin: 12px 1;
             left: 4px;
+			
         }
 
         h2 {
@@ -60,7 +66,7 @@
         }
 
         p {
-            font-size: 30px;
+            font-size: 40px;
             line-height: 2em;
             margin: 0;
             letter-spacing: 2px;
@@ -108,7 +114,8 @@
 
 <body>
     <div id="wrapper">
-        <h1>大懒虫和小懒虫的专属网站首页</h1>
+        <!-- <h1>大懒虫和小懒虫的专属网站首页</h1> 原始-->
+		<h1>懒虫和宝贝在一起两个月小彩蛋</h1>
         <h2></h2>
         <p>
             <a href="https://scuteason.github.io/lanchong/time" target="_blank">那个好看的树</a>
@@ -133,7 +140,7 @@
         </p>
     </div>
     <canvas width="1920" height="917"></canvas>
-	
+	<canvas id="particle-canvas" width="1450" height="1135"></canvas>
 	<!-- <canvas aria-label="Circular candy colliding"></canvas> -->
 
     
@@ -200,8 +207,10 @@
 		
         i()
     </script> -->
-<script  src="js/script.js"></script>
+	
+<!-- <script  src="js/script.js"></script>  原来的再启用-->
 
+<script src="./1output/script.js"></script>  <!-- 素材1 -->
 </body>
 
 </html>
