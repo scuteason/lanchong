@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>给小宝贝的一封信</title>
+    <script
+      src="js/modernizr.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <!--[if IE 8]>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $("#contact").addClass("target");
+          $("#flip2back, #close").click(function (e) {
+            $(".target").removeClass("target");
+            e.preventDefault();
+          });
+          $("#open, #flip").click(function (e) {
+            var $anchor = $(this);
+            $($anchor.attr("href")).addClass("target");
+            e.preventDefault();
+          });
+        });
+      </script>
+    <![endif]-->
+
+    <link href="css/mail_style.css" rel="stylesheet" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <section class="container" id="contact">
+      <form class="flip">
+        <div class="front">
+          <h2>Destination</h2>
+          <p>QiaoMao's Heart</p>
+          <p>Haishan, Raoping, Guangdong, China</p>
+          <a id="flip2back" href="#">Open !</a>
+        </div>
+        <div id="content" class="back">
+          <div id="letter">
+            <div class="container">
+              <div class="flip">
+                <div class="front"></div>
+                <div class="back">
+                  七夕节快乐呀我的宝贝小懒虫
+                  <a id="close" href="#">Close</a>
+                </div>
+              </div>
+            </div>
+            <div type="K" style="font-family:Times">
+              俏锚小宝贝：
+              <br />
+              这是我们过的第一个情人节呢
+              <br />
+              上一个有关系的时候还是5月20号呀，那个时候我们还没在一起
+              <br />
+              可是那两个凌晨，我陪宝贝说了超多话，有4个小时呢😘
+              <br />
+              接下去呀，懒虫会慢慢变成宝贝的开心果哦
+			  <br />
+              肯定会让宝贝开开心心的，少一点烦恼和难过的哦
+			  <br />
+              我感觉呀，这半年来有宝贝真的好幸福呢
+			  <br />
+			  就想着一直这样下去呀
+			  <br />
+              <div style="direction: rtl;">
+                爱你的 懒虫锋泽
+              </div>
+            </div>
+            <button onclick="window.open('Paint_player.html')">看看懒虫画的画</button>
+			<!-- <button id="ok">嗯哼，宝贝也是，mua~</button> <button id="no">臭懒虫，丑拒，哼~</button> -->
+          </div>
+          <div id="top">
+            <a id="flip" href="#contact">Flip</a>
+          </div>
+          <div id="lid" class="container">
+            <div class="flip">
+              <div class="front">
+                <div>
+                  <label>To: QiaoMao Babe</label>
+                </div>
+                <div>
+                  <label>From: FengZe Lazy</label>
+                </div>
+                <a id="open" href="#content">Open</a>
+              </div>
+              <div class="back"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
