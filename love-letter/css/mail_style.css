@@ -112,7 +112,7 @@ summary {
 
 @font-face { 
   font-family: Satisfy; /*这里是说明调用来的字体名字*/ 
-  src: url(‘\fonts\Satisfy-Regular.TTF’); /*这里是字体文件路径*/ 
+  src: url(‘./fonts/Satisfy-Regular.TTF’); /*这里是字体文件路径*/ 
     }
  
     /* .content{  font-family: STKAITI;} */
