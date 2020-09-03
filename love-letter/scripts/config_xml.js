@@ -2,9 +2,9 @@ var TSC = TSC || {};
 
 TSC.embedded_config_xml = '<x:xmpmeta tsc:version="2.0.1" xmlns:x="adobe:ns:meta/" xmlns:tsc="http://www.techsmith.com/xmp/tsc/">\
    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpDM="http://ns.adobe.com/xmp/1.0/DynamicMedia/" xmlns:xmpG="http://ns.adobe.com/xap/1.0/g/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:tscDM="http://www.techsmith.com/xmp/tscDM/" xmlns:tscIQ="http://www.techsmith.com/xmp/tscIQ/" xmlns:tscHS="http://www.techsmith.com/xmp/tscHS/" xmlns:stDim="http://ns.adobe.com/xap/1.0/sType/Dimensions#" xmlns:stFnt="http://ns.adobe.com/xap/1.0/sType/Font#" xmlns:exif="http://ns.adobe.com/exif/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/">\
-      <rdf:Description dc:date="2020-08-25 12:36:33 上午" dc:source="Camtasia,19.0.9,chs" dc:title="Paint" tscDM:firstFrame="Paint_First_Frame.png" tscDM:originId="5C7833B9-6EA7-4FFA-BEDC-C927014F8076" tscDM:project="无标题项目">\
-         <xmpDM:duration xmpDM:scale="1/1000" xmpDM:value="55033"/>\
-         <xmpDM:videoFrameSize stDim:unit="pixel" stDim:h="1080" stDim:w="1920"/>\
+      <rdf:Description dc:date="2020-09-03 04:21:51 下午" dc:source="Camtasia,19.0.9,chs" dc:title="paint" tscDM:firstFrame="paint_First_Frame.png" tscDM:originId="5C7833B9-6EA7-4FFA-BEDC-C927014F8076" tscDM:project="无标题项目">\
+         <xmpDM:duration xmpDM:scale="1/1000" xmpDM:value="27500"/>\
+         <xmpDM:videoFrameSize stDim:unit="pixel" stDim:h="768" stDim:w="1366"/>\
          <tsc:langName>\
             <rdf:Bag>\
                <rdf:li xml:lang="zh-CN">Chinese</rdf:li></rdf:Bag>\
@@ -29,7 +29,7 @@ TSC.embedded_config_xml = '<x:xmpmeta tsc:version="2.0.1" xmlns:x="adobe:ns:meta
             <rdf:Description>\
                <tscDM:files>\
                   <rdf:Seq>\
-                     <rdf:li xmpDM:name="0" xmpDM:value="Paint.mp4"/><rdf:li xmpDM:name="1" xmpDM:value="Paint_First_Frame.png"/><rdf:li xmpDM:name="2" xmpDM:value="Paint_Thumbnails.png"/></rdf:Seq>\
+                     <rdf:li xmpDM:name="0" xmpDM:value="paint.mp4"/><rdf:li xmpDM:name="1" xmpDM:value="paint_First_Frame.png"/><rdf:li xmpDM:name="2" xmpDM:value="paint_Thumbnails.png"/></rdf:Seq>\
                </tscDM:files>\
             </rdf:Description>\
          </tscDM:contentList>\
