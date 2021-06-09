@@ -269,8 +269,8 @@ webpackJsonp(
           data: function () {
             return {
               pData: {
-                call: "距离大帅帅和小乖乖的第一次赌约还有",
-                time: "2021/6/10 0:00:00",
+                call: "距离虫虫和宝贝的第一次赌约还有",
+                time: "2022/6/10 0:00:00",
               },
             };
           },
